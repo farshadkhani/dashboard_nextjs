@@ -1,8 +1,12 @@
+"use client"
+
+
 import Link from 'next/link'
 import React from 'react'
 import {RxSketchLogo , RxDashboard , RxPerson} from "react-icons/rx"
 import {HiOutlineShoppingBag} from "react-icons/hi"
 import {FiSettings} from "react-icons/fi"
+import Image from "next/image"
 
 export const Sidebar = ({children}) => {
   return (
@@ -37,6 +41,12 @@ export const Sidebar = ({children}) => {
                 <Link href="/">
                     <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4   p-3 rounded-lg inline-block'>
                         <FiSettings size={20}/>
+                    </div>
+                </Link>
+
+                <Link href="/anjammidam">
+                    <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4   p-3 rounded-lg inline-block'>
+                    <Image src="/anjammidam.png" alt="anjammidam "  width={30}height={30} />              
                     </div>
                 </Link>
 
